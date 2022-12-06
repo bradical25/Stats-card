@@ -82,7 +82,7 @@ strong {
 
 .card__image {
   width: 100%;
-  background-color: var(--color-accent);
+  mask-image: linear-gradient(var(--color-accent));
 }
 
 .card__hero {
