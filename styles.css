@@ -1,0 +1,148 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --color-primary: #1b1937;
+  --color-background: #0a0c1c;
+  --color-accent: #ab5cdb;
+
+  --textcolor-primary: white;
+  --textcolor-secondary: hsla(0, 0%, 100%, 0.75);
+  --textcolor-general: hsla(0, 0%, 100%, 0.6);
+
+  --font-h1: 3.6rem;
+  --font-h2: 2.4rem;
+  --font-p: 1.5rem;
+}
+
+@media (max-width: 650px) {
+  :root {
+    --font-h1: 2.8rem;
+  }
+}
+
+body {
+  background: var(--color-background);
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  color: var(--textcolor-primary);
+}
+
+h1 {
+  font-size: var(--font-h1);
+}
+
+h2 {
+  font-size: var(--font-h2);
+}
+
+p {
+  color: var(--textcolor-general);
+  font-size: var(--font-p);
+  font-weight: 400;
+}
+
+strong {
+  color: var(--color-accent);
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2.5rem;
+}
+
+.card__container {
+  background: var(--color-primary);
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  margin: 2.5rem 0;
+  padding: 0;
+}
+
+.card__image {
+  width: 100%;
+  background-color: var(--color-accent);
+}
+
+.card__hero {
+  margin: 3rem 2rem 3rem 2rem;
+  padding: 0;
+}
+
+.card__hero-head {
+  margin: 0;
+  padding: 1rem;
+}
+
+.card__hero-body {
+  line-height: 2.5rem;
+  padding: 1rem;
+  margin: 0;
+}
+
+.card__list {
+  margin: 1rem 0 0 0;
+  padding: 0;
+}
+
+.card__list-item {
+  list-style: none;
+}
+
+.card__li-head {
+  margin: 0 0 1rem 0;
+}
+
+.card__li-body {
+  margin: 0 0 3rem 0;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 650px) {
+  .card__container {
+    flex-direction: row-reverse;
+    text-align: left;
+    width: 70%;
+  }
+
+  main {
+    margin: 10rem;
+  }
+
+  .card__hero {
+    margin: 0;
+  }
+
+  .card__hero-head,
+  .card__hero-body {
+    padding: 0 0 3rem 0;
+  }
+
+  .card__list {
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+  }
+}
